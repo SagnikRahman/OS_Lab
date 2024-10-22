@@ -59,8 +59,7 @@ public class SJF {
         double avgWT = (double) totalWT / n;
         System.out.println("\nProcess\tArrival\tBurst\tCompletion\tTurnaround\tWaiting");
         for (Process p : processes) {
-            System.out.println(p.name + "\t" + p.arrivalTime + "\t" + p.burstTime + "\t" + p.completionTime
-                    + "\t\t" + p.turnaroundTime + "\t\t" + p.waitingTime);
+            System.out.println(p.name + "\t" + p.arrivalTime + "\t" + p.burstTime + "\t" + p.completionTime + "\t\t" + p.turnaroundTime + "\t\t" + p.waitingTime);
         }
         System.out.printf("\nAverage Turnaround Time: %.2f\n", avgTAT);
         System.out.printf("Average Waiting Time: %.2f\n", avgWT);
